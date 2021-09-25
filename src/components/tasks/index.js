@@ -26,21 +26,27 @@ const TasksTable = () => {
         {
             dataField: 'busStop',
             text: 'Остановка автобуса'
+        },
+        {
+            dataField: 'type',
+            text: 'Тип задачи'
         }
     ];
     const [tableData, setTableData] = useState([{
         id: '1',
         brigade: 'Бригада 1',
         district: '100',
-        busNumber: '1',
-        busStop: 'Вишневая'
+        busNumber: '586',
+        busStop: 'Вишневая',
+        type: 'Ручная'
     },
     {
         id: '2',
-        brigade: 'Бригада 2',
+        brigade: 'Бригада 9',
         district: '200',
         busNumber: '2',
-        busStop: 'Малиновая'
+        busStop: 'Малиновая',
+        type: 'Авто'
     }])
     const onSubmit = (values) => {
         let result = tableData
@@ -50,6 +56,7 @@ const TasksTable = () => {
             district: values?.district,
             busNumber: values?.busNumber,
             busStop: values?.busStop,
+            type: 'Ручная',
         },)
         setTableData(result)
         setModal(false)

@@ -35,18 +35,18 @@ const BusTable = () => {
     const data = [
         {
             id: '1',
-            busNumber: '1',
+            busNumber: '586',
             countWithoutTicket: '100',
-            percentWithoutTicket: '10',
-            brigade: '2',
+            percentWithoutTicket: '70',
+            brigade: '1',
             checksCount: '123'
         },
         {
             id: '2',
             busNumber: '2',
             countWithoutTicket: '100',
-            percentWithoutTicket: '20',
-            brigade: '1',
+            percentWithoutTicket: '40',
+            brigade: '-',
             checksCount: '165'
         },
     ]

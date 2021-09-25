@@ -26,7 +26,7 @@ const BrigadeTable = () => {
             id: '1',
             name: 'Бригада 1',
             count: '100',
-            busNumber: '1'
+            busNumber: '586'
         },
         {
             id: '2',

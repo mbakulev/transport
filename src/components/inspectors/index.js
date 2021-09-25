@@ -18,7 +18,7 @@ const InspectorsTable = () => {
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Иванов</td>
+                        <td>Усманов</td>
                         <td>Иван</td>
                         <td>1</td>
                         <td>10</td>

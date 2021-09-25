@@ -56,7 +56,7 @@ const TasksTable = () => {
       };
     return (
         <div style={{ "margin": "50px", "padding": "50px" }}>
-            <Button variant="primary" style={{ "marginBottom": "50px" }} onClick={() => setModal(true)}>Добавить задачу</Button>
+            <Button variant="danger" style={{ "marginBottom": "50px", "background-color": "rgb(233,0,0)" }} onClick={() => setModal(true)}>Добавить задачу</Button>
             <BootstrapTable keyField='id' data={tableData} columns={columns} />
             <Modal
                 show={isModal}
@@ -108,7 +108,7 @@ const TasksTable = () => {
                                     )}
                                 </Field>
                                 <div  style={{"padding": "5px"}}>
-                                    <Button type="submit">
+                                    <Button type="submit" variant="danger" style={{"background-color": "rgb(233,0,0)"}}>
                                         Создать
                                     </Button>
                                 </div>

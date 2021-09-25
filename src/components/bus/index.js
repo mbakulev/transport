@@ -74,7 +74,7 @@ const BusTable = () => {
                             <Form.Label>Добавить ролик для монитора автобуса</Form.Label>
                             <Form.Control type="file" />
                         </Form.Group>
-                        <Button variant="primary" type="submit">
+                        <Button variant="danger" type="submit" style={{"background-color": "rgb(233,0,0)"}}>
                             Добавить
                         </Button>
                     </Form>

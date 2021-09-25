@@ -1,11 +1,13 @@
 import { useState } from "react"
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
+import { Navbar, Nav, Container } from "react-bootstrap"
 import Map from "../map"
 import BusTable from "../bus"
 import InspectorsTable from "../inspectors"
 import BusRouteTable from "../busRoute"
 import BrigadeTable from "../brigade"
 import TasksTable from "../tasks"
+import './styles.css'
+import Logo from './logo.svg'
 
 const Admin = () => {
 
@@ -15,34 +17,45 @@ const Admin = () => {
     }
 
     const renderComponentPage = () => {
-        switch(pageNumber) {
+        switch (pageNumber) {
             case 1: {
-                return <Map /> 
+                return <Map />
             }
             case 2: {
-                return <TasksTable /> 
+                return <TasksTable />
             }
             case 3: {
-                return <InspectorsTable /> 
+                return <InspectorsTable />
             }
             case 4: {
-                return <BrigadeTable /> 
+                return <BrigadeTable />
             }
             case 5: {
-                return <BusTable /> 
+                return <BusTable />
             }
             case 6: {
-                return <BusRouteTable /> 
+                return <BusRouteTable />
             }
         }
-        
+
     }
 
     return (
-        <div> 
-            <Navbar bg="dark" expand="lg" variant="dark">
+        <div>
+            <Navbar className="color-nav" variant="dark" >
                 <Container>
-                    <Navbar.Brand onClick={() => changePage(1)}>Контролер Админ</Navbar.Brand>
+                    <Navbar.Brand href="#home">
+                        <img
+                            alt=""
+                            src={Logo}
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />{' '}
+                        Контролер Админ
+                    </Navbar.Brand>
+                </Container>
+                <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

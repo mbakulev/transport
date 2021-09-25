@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Modal } from "react-bootstrap"
+import { Modal, Button } from "react-bootstrap"
 import BootstrapTable from 'react-bootstrap-table-next'
 
 const BrigadeTable = () => {
@@ -57,8 +57,9 @@ const BrigadeTable = () => {
 
         for (let i = 0; i < modalDataArray[modalDataIndex].length; i++) {
             result.push(
-                <div>
+                <div style={{"padding":"20px"}}>
                     {modalDataArray[modalDataIndex][i]}
+                    <Button variant="danger" size="sm" style={{ "margin":"10px", "background-color": "rgb(233,0,0)" }}>Убрать контролера</Button>
                 </div>
             )
         }

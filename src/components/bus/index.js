@@ -65,7 +65,7 @@ const BusTable = () => {
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="example-modal-sizes-title-lg">
-                        Добавть ролик
+                        Добавить ролик
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>

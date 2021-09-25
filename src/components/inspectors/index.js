@@ -1,8 +1,9 @@
-import { Table } from "react-bootstrap"
+import { Table, Button } from "react-bootstrap"
 
 const InspectorsTable = () => {
     return (
         <div style={{ "margin": "50px", "padding": "50px" }}>
+            <Button variant="danger" style={{ "marginBottom": "50px", "background-color": "rgb(233,0,0)" }}>Добавить контролера</Button>
             <Table striped bordered hover>
                 <thead>
                     <tr>
